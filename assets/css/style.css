@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%; /*1rem = 10px*/
+  text-align: center;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #1b1b1b;
+  position: relative;
+}
+
+.main__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  background-color: #212121;
+  border-radius: 20px;
+  box-shadow: 1px 2px 5px rgba(41, 41, 41, 0.5);
+}
