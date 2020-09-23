@@ -6,6 +6,15 @@
   box-sizing: inherit;
 }
 
+:root {
+  --back-background-color: #fadfdd;
+  --main-background-color: #f6f6f6;
+  --sidebar-background-color: #ffffff;
+  --highlight-color: #ff2e63;
+
+  --one-per-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
 html {
   box-sizing: border-box;
 }
@@ -18,18 +27,63 @@ body {
 .main {
   width: 100vw;
   height: 100vh;
-  background-color: #1b1b1b;
+  background-color: var(--back-background-color);
   position: relative;
+  overflow: hidden;
 }
 
-.main__content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.app {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 3rem;
   width: 90%;
   height: 90%;
-  background-color: #212121;
+  background-color: var(--main-background-color);
   border-radius: 20px;
-  box-shadow: 1px 2px 5px rgba(41, 41, 41, 0.5);
+  box-shadow: var(--one-per-shadow);
+}
+
+/****************************
+          SIDEBAR
+****************************/
+.sidebar {
+  background-color: var(--sidebar-background-color);
+  position: relative;
+  height: 100%;
+  width: 20%;
+}
+
+.sidebar__buttons {
+  position: absolute;
+  top: 4%;
+  left: 15%;
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+}
+
+.sidebar__button {
+  box-shadow: var(--one-per-shadow);
+}
+
+.sidebar__buttons--red {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: #ff8684;
+}
+
+.sidebar__buttons--yellow {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: #fdd07b;
+}
+
+.sidebar__buttons--green {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: #3ece75;
 }
