@@ -1,0 +1,20 @@
+.logo {
+  height: 100%;
+  width: auto;
+
+  &__holder {
+    height: 2rem;
+    width: fit-content;
+    margin-top: 6rem;
+    margin-left: 2.7rem;
+    display: flex;
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding-left: 0.5rem;
+    color: var(--text-color-dark);
+    user-select: none;
+  }
+}

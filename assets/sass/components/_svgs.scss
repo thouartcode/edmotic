@@ -1,0 +1,9 @@
+.list__svg {
+  width: 1.1rem;
+  height: 1.1rem;
+
+  &--glyph {
+    display: inline-block;
+    fill: var(--text-color-not-selected);
+  }
+}
