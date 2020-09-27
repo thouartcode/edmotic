@@ -41,6 +41,10 @@ html {
   box-shadow: var(--one-per-shadow);
   display: flex; }
 
+.mainapp {
+  width: 100%;
+  height: 100%; }
+
 body {
   font-family: "Raleway", sans-serif;
   font-size: 62.5%;
@@ -53,6 +57,49 @@ body {
   color: var(--text-color-dark);
   font-weight: 700;
   letter-spacing: 0.1rem; }
+
+.heading-secondary {
+  display: inline-block;
+  font-size: 1.4rem;
+  color: var(--text-color-dark);
+  font-weight: 700;
+  letter-spacing: 0.1rem; }
+
+.margin-left-small {
+  margin-left: 1rem; }
+
+.margin-left-medium {
+  margin-left: 3rem; }
+
+.margin-left-large {
+  margin-left: 5rem; }
+
+.margin-left-huge {
+  margin-left: 7rem; }
+
+.margin-top-small {
+  margin-top: 2rem; }
+
+.margin-top-medium {
+  margin-top: 3rem; }
+
+.margin-top-large {
+  margin-top: 5rem; }
+
+.margin-top-huge {
+  margin-top: 7rem; }
+
+.margin-bottom-small {
+  margin-bottom: 2rem; }
+
+.margin-bottom-medium {
+  margin-bottom: 3rem; }
+
+.margin-bottom-large {
+  margin-bottom: 5rem; }
+
+.margin-bottom-huge {
+  margin-bottom: 7rem; }
 
 .btn {
   cursor: pointer;
@@ -149,12 +196,43 @@ body {
       .playlists__list--item:not(:last-child) {
         margin-bottom: 1rem; }
 
+.song__card {
+  height: 8rem;
+  width: 8rem;
+  text-align: center;
+  cursor: pointer; }
+  .song__card--cover {
+    height: 100%;
+    width: 100%;
+    display: inline-block; }
+  .song__card--image {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 6px; }
+  .song__card--name {
+    color: var(--highlight-color);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.8px; }
+  .song__card--artist {
+    font-size: 0.8rem;
+    font-weight: 400; }
+
 .list__svg {
   width: 1.1rem;
   height: 1.1rem; }
   .list__svg--glyph {
     display: inline-block;
     fill: var(--text-color-not-selected); }
+
+.weeklytop .weekly__list {
+  list-style: none;
+  display: flex; }
+  .weeklytop .weekly__list--1 {
+    margin-left: 5rem; }
+  .weeklytop .weekly__list:not(:last-child) {
+    margin-right: 1rem; }
 
 .content {
   width: 100%;
@@ -179,7 +257,7 @@ body {
   display: inline-block;
   position: absolute;
   top: 20%;
-  left: 50%; }
+  left: 40%; }
   .featured__text {
     display: inline-block;
     font-size: 0.8rem;
@@ -203,6 +281,61 @@ body {
       color: var(--text-color-light);
       margin-top: 0.3rem;
       user-select: none; }
+  .featured__btn {
+    margin-top: 1rem;
+    background-color: var(--color-black-1);
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer; }
+    .featured__btn--holder {
+      height: 2.5rem;
+      width: 2.5rem;
+      display: inline-block;
+      transform: translateY(20%); }
+    .featured__btn--glyph {
+      fill: var(--highlight-color);
+      display: inline-block; }
+
+.nav {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  z-index: 9999999999;
+  display: flex; }
+  .nav__notif--text {
+    color: var(--highlight-color);
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-weight: 700; }
+  .nav__btn {
+    margin-top: 1rem;
+    background-color: var(--color-black-1);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer; }
+    .nav__btn:not(:last-child) {
+      margin-right: 0.5rem; }
+    .nav__btn--holder {
+      height: 2rem;
+      width: 2rem;
+      display: inline-block;
+      transform: translateY(20%); }
+    .nav__btn--glyph {
+      fill: var(--highlight-color);
+      display: inline-block; }
+  .nav__user {
+    overflow: hidden; }
+  .nav__holder {
+    height: 100%;
+    width: 100%; }
+    .nav__holder--image {
+      display: block;
+      max-width: 100%;
+      max-height: 100%; }
 
 .sidebar {
   background-color: var(--sidebar-background-color);

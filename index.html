@@ -131,11 +131,52 @@
                 </div>
               </div>
               
-              <div class="featured__btn"></div>
+              <div class="featured__btn">
+                <svg class="featured__btn--holder">
+                  <use xlink:href="/assets/img/sprite.svg#icon-play" class="featured__btn--glyph">
+                </svg>
+              </div>
+            </div>
+
+            <!----------NAVIGATION------------>
+            <div class="nav">
+              <div class="nav__btn nav__search">
+                <svg class="nav__btn--holder">
+                  <use xlink:href="/assets/img/sprite.svg#icon-search" class="nav__btn--glyph">
+                </svg>
+              </div>
+              <div class="nav__btn nav__notif">
+                <p class="nav__notif--text">3</p>
+              </div>
+              <div class="nav__btn nav__user">
+                <div class="nav__holder">
+                  <img src="/assets/img/user.jpg" alt="User" class="nav__holder--image">
+                </div>
+              </div>
             </div>
           </header>
+
+          <!----------CONTENT------------>
+          <div class="mainapp">
+            <div class="weeklytop">
+              <h2 class="heading-secondary margin-left-large margin-bottom-small margin-top-small">Weekly Top Tracks</h2>
+
+              <ul class="weekly__list">
+                <li class="weekly__list--1 song__card">
+                  <div class="song__card--cover" onclick="playSong(event)">
+                    <img src="/assets/img/piece_of_your_heart.jpg" alt="Piece of your Heart" class="song__card--image">
+                  </div>
+                  <div class="song__card--name">Piece of your heart</div>
+                  <div class="song__card--artist">Meduza ft. Goodboys</div>
+                </li>
+              </ul>
+
+            </div>
+          </div>         
+
         </div>
       </div>
     </main>
+    <script src="/assets/js/app.js"></script>
   </body>
 </html>

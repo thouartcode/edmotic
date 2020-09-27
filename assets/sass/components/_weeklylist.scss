@@ -1,0 +1,14 @@
+.weeklytop {
+  .weekly__list {
+    list-style: none;
+    display: flex;
+
+    &--1 {
+      margin-left: 5rem;
+    }
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+}
