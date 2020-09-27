@@ -2,8 +2,10 @@
   --back-background-color: #20d1c8;
   --main-background-color: #f6f6f6;
   --sidebar-background-color: #ffffff;
+  --color-black-1: #303841;
   --highlight-color: #20d1c8;
   --text-color-dark: #2b2e4a;
+  --text-color-light: #f5f5f5;
   --text-color-not-selected: #868686;
   --one-per-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.1); }
 
@@ -13,6 +15,9 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit; }
+
+::selection {
+  background-color: var(--highlight-color); }
 
 html {
   box-sizing: border-box; }
@@ -33,7 +38,8 @@ html {
   height: 90%;
   background-color: var(--main-background-color);
   border-radius: 20px;
-  box-shadow: var(--one-per-shadow); }
+  box-shadow: var(--one-per-shadow);
+  display: flex; }
 
 body {
   font-family: "Raleway", sans-serif;
@@ -149,6 +155,54 @@ body {
   .list__svg--glyph {
     display: inline-block;
     fill: var(--text-color-not-selected); }
+
+.content {
+  width: 100%;
+  height: 100%; }
+
+.header {
+  width: 100%;
+  height: 35%;
+  background-color: black;
+  position: relative; }
+  .header__holder {
+    height: 100%;
+    width: auto;
+    display: inline-block;
+    margin-left: 10rem; }
+    .header__holder--image {
+      display: block;
+      max-width: 100%;
+      max-height: 100%; }
+
+.featured {
+  display: inline-block;
+  position: absolute;
+  top: 20%;
+  left: 50%; }
+  .featured__text {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-color-light);
+    background-color: var(--color-black-1);
+    padding: 0.5rem;
+    border-radius: 8px;
+    user-select: none; }
+  .featured__song {
+    margin-top: 1rem; }
+    .featured__song--name {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--text-color-light);
+      user-select: none; }
+    .featured__song--artists {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--text-color-light);
+      margin-top: 0.3rem;
+      user-select: none; }
 
 .sidebar {
   background-color: var(--sidebar-background-color);

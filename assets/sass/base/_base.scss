@@ -6,6 +6,10 @@
   box-sizing: inherit;
 }
 
+::selection {
+  background-color: var(--highlight-color);
+}
+
 html {
   box-sizing: border-box;
 }
@@ -28,4 +32,5 @@ html {
   background-color: var(--main-background-color);
   border-radius: 20px;
   box-shadow: var(--one-per-shadow);
+  display: flex;
 }
