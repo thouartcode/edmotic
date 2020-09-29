@@ -17,11 +17,11 @@ const bellaCiao = new Audio();
 // bellaCiao.src = "/assets/tracks/bella_ciao.mp3";
 
 pieceOfYourHeart.src = path.resolve("../tracks/", "piece_of_your_heart.mp3");
-pieceOfYourHeart.src = path.resolve("../tracks/", "lose_control.mp3");
-pieceOfYourHeart.src = path.resolve("../tracks/", "falling.mp3");
-pieceOfYourHeart.src = path.resolve("../tracks/", "blah_blah_blah.mp3");
-pieceOfYourHeart.src = path.resolve("../tracks/", "ten_feet_tall.mp3");
-pieceOfYourHeart.src = path.resolve("../tracks/", "bella_ciao.mp3");
+loseControl.src = path.resolve("../tracks/", "lose_control.mp3");
+falling.src = path.resolve("../tracks/", "falling.mp3");
+blahBlahBlah.src = path.resolve("../tracks/", "blah_blah_blah.mp3");
+tenFeetTall.src = path.resolve("../tracks/", "ten_feet_tall.mp3");
+bellaCiao.src = path.resolve("../tracks/", "bella_ciao.mp3");
 
 /****************************************************************************/
 
