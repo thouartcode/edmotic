@@ -14,6 +14,8 @@ blahBlahBlah.src = "../assets/tracks/blah_blah_blah.mp3";
 tenFeetTall.src = "../assets/tracks/ten_feet_tall.mp3";
 bellaCiao.src = "../assets/tracks/bella_ciao.mp3";
 
+pieceOfYourHeart.crossOrigin = "anonymous";
+
 /****************************************************************************/
 
 const elements = {
