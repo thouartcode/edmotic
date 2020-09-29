@@ -7,12 +7,12 @@ const blahBlahBlah = new Audio();
 const tenFeetTall = new Audio();
 const bellaCiao = new Audio();
 
-pieceOfYourHeart.src = "./assets/tracks/piece_of_your_heart.mp3";
-loseControl.src = "./assets/tracks/lose_control.mp3";
-falling.src = "./assets/tracks/falling.mp3";
-blahBlahBlah.src = "./assets/tracks/blah_blah_blah.mp3";
-tenFeetTall.src = "./assets/tracks/ten_feet_tall.mp3";
-bellaCiao.src = "./assets/tracks/bella_ciao.mp3";
+pieceOfYourHeart.src = "/assets/tracks/piece_of_your_heart.mp3";
+loseControl.src = "/assets/tracks/lose_control.mp3";
+falling.src = "/assets/tracks/falling.mp3";
+blahBlahBlah.src = "/assets/tracks/blah_blah_blah.mp3";
+tenFeetTall.src = "/assets/tracks/ten_feet_tall.mp3";
+bellaCiao.src = "/assets/tracks/bella_ciao.mp3";
 
 /****************************************************************************/
 
@@ -28,32 +28,32 @@ const songs = {
   pieceOfYourHeart: {
     name: "Piece of your heart",
     artist: "Meduza ft. Goodboys",
-    imagePath: "./assets/img/piece_of_your_heart.jpg",
+    imagePath: "/assets/img/piece_of_your_heart.jpg",
   },
   loseControl: {
     name: "Lose Control",
     artist: "Meduza ft. Becky Hill and Goodboys",
-    imagePath: "./assets/img/lose_control.jpg",
+    imagePath: "/assets/img/lose_control.jpg",
   },
   falling: {
     name: "Falling",
     artist: "Alesso",
-    imagePath: "./assets/img/falling.jpg",
+    imagePath: "/assets/img/falling.jpg",
   },
   blahBlahBlah: {
     name: "Blah Blah Blah",
     artist: "Armin van Buuren",
-    imagePath: "./assets/img/blah_blah_blah.jpg",
+    imagePath: "/assets/img/blah_blah_blah.jpg",
   },
   tenFeetTall: {
     name: "Ten Feet Tall",
     artist: "Afrojack ft. Wrabel",
-    imagePath: "./assets/img/ten_feet_tall.jpg",
+    imagePath: "/assets/img/ten_feet_tall.jpg",
   },
   bellaCiao: {
     name: "Bella Ciao",
     artist: "Hardwell ft. Maddix",
-    imagePath: "./assets/img/bella_ciao.jpg",
+    imagePath: "/assets/img/bella_ciao.jpg",
   },
 };
 
