@@ -1,3 +1,5 @@
+const path = require("path");
+
 /***************************AUDIOS*******************************************/
 
 const pieceOfYourHeart = new Audio();
@@ -7,14 +9,19 @@ const blahBlahBlah = new Audio();
 const tenFeetTall = new Audio();
 const bellaCiao = new Audio();
 
-pieceOfYourHeart.src = "../assets/tracks/piece_of_your_heart.mp3";
-loseControl.src = "../assets/tracks/lose_control.mp3";
-falling.src = "../assets/tracks/falling.mp3";
-blahBlahBlah.src = "../assets/tracks/blah_blah_blah.mp3";
-tenFeetTall.src = "../assets/tracks/ten_feet_tall.mp3";
-bellaCiao.src = "../assets/tracks/bella_ciao.mp3";
+// pieceOfYourHeart.src = "/assets/tracks/piece_of_your_heart.mp3";
+// loseControl.src = "/assets/tracks/lose_control.mp3";
+// falling.src = "/assets/tracks/falling.mp3";
+// blahBlahBlah.src = "/assets/tracks/blah_blah_blah.mp3";
+// tenFeetTall.src = "/assets/tracks/ten_feet_tall.mp3";
+// bellaCiao.src = "/assets/tracks/bella_ciao.mp3";
 
-pieceOfYourHeart.crossOrigin = "anonymous";
+pieceOfYourHeart.src = path.resolve("../tracks/", "piece_of_your_heart.mp3");
+pieceOfYourHeart.src = path.resolve("../tracks/", "lose_control.mp3");
+pieceOfYourHeart.src = path.resolve("../tracks/", "falling.mp3");
+pieceOfYourHeart.src = path.resolve("../tracks/", "blah_blah_blah.mp3");
+pieceOfYourHeart.src = path.resolve("../tracks/", "ten_feet_tall.mp3");
+pieceOfYourHeart.src = path.resolve("../tracks/", "bella_ciao.mp3");
 
 /****************************************************************************/
 
